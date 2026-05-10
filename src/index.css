@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 :root {
-  /* Keeping YOUR light mode values exactly as they were */
   --background: 0 0% 98%;
   --foreground: 220 10% 10%;
   --border: 220 13% 91%;
@@ -16,20 +15,7 @@
   --radius: 0.5rem;
 }
 
-.dark {
-  /* Keeping YOUR dark mode values exactly as they were */
-  --background: 220 10% 10%;
-  --foreground: 0 0% 98%;
-  --border: 220 13% 20%;
-  --primary: 210 100% 56%;
-  --primary-foreground: 0 0% 100%;
-}
-
 @layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply font-sans antialiased bg-background text-foreground;
-  }
+  * { @apply border-border; }
+  body { @apply bg-background text-foreground; }
 }
