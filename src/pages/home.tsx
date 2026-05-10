@@ -1,11 +1,11 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Send, Cpu, Clock, History, LayoutGrid, TerminalSquare, Search, X, Menu } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Card, CardContent } from "@/components/ui/card";
-import { ScrollArea } from "@/components/ui/scroll-area";
-import { MarkdownRenderer } from "@/components/markdown-renderer";
-import { cn } from "@/lib/utils";
+import { Button } from "../components/ui/button";
+import { Input } from "../components/ui/input";
+import { Card, CardContent } from "../components/ui/card";
+import { ScrollArea } from "../components/ui/scroll-area";
+import { MarkdownRenderer } from "../components/markdown-renderer";
+import { cn } from "../lib/utils";
 
 type HistoryItem = {
   query: string;
