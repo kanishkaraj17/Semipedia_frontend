@@ -1,29 +1,6 @@
-@import "tailwindcss";
-
-/* v4 doesn't use @plugin for these anymore; it uses @import */
-@import "tw-animate-css";
-
-@theme {
-  /* We keep your specific colors but remove the hsl() wrappers that v4 handles automatically */
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-border: var(--border);
-  --color-input: var(--input);
-  --color-ring: var(--ring);
-
-  --color-primary: var(--primary);
-  --color-primary-foreground: var(--primary-foreground);
-  
-  --color-secondary: var(--secondary);
-  --color-secondary-foreground: var(--secondary-foreground);
-
-  --color-destructive: var(--destructive);
-  --color-destructive-foreground: var(--destructive-foreground);
-
-  --radius-lg: var(--radius);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-sm: calc(var(--radius) - 4px);
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   /* Keeping YOUR light mode values exactly as they were */
