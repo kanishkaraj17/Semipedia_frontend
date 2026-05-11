@@ -4,8 +4,7 @@ import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
 import { Card, CardContent } from "../components/ui/card";
 import { ScrollArea } from "../components/ui/scroll-area";
-import { MarkdownRenderer } from "@/components/MarkdownRenderer";
-
+import { MarkdownRenderer } from "../components/MarkdownRenderer";
 import { cn } from "../lib/utils";
 
 type HistoryItem = {
