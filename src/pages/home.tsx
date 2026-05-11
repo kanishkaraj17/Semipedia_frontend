@@ -109,12 +109,11 @@ export default function Home() {
     setIsRefusal(false);
 
     try {
-      const response = await fetch('/api/chat/ask', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ query: q, history: history.slice(0, 5) }),
+      const response = await fetch("https://semipedia-backend.onrender.com/api/chat/ask", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message: input }),
       });
-
       if (!response.body) throw new Error("No response body");
 
       const reader = response.body.getReader();
